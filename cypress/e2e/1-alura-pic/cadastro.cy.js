@@ -3,7 +3,7 @@ import { faker } from '@faker-js/faker';
 describe('Cadastro de usuários Alurapic', () => {
 
     beforeEach(() => {
-        cy.visit('https://alura-fotos.herokuapp.com/#/home')
+        cy.visit('/')
     })
 
     it('verifica mensagens validação', () => {

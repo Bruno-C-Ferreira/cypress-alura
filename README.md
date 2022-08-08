@@ -55,3 +55,5 @@ Consequentemente, os testes rodam mais rapidamente e podem ser executados a part
 15 - Instalar o pacote npm Fakerjs npm install --save-dev @faker-js/faker - utilizado para inserir dados dinâmicos e aleatórios
 
 16 - Para ignorar arquivos que não desejamos que sejam commitados no git, adicionar o nome do arquivo no arquivo gitignore
+
+17 - Configurar uma baseUrl no arquivo cypress.config.js como uma boa prática no cypress

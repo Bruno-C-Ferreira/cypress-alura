@@ -1,5 +1,8 @@
 describe('Buscar fotos e dados', () => {
     it('buscar fotos do usuário Flavio', () => {
+
+        // const tempoEsperado = Math.random() * 2000;
+
         cy.request({ //comando request para realizar uma requisição http passando o método e a url desejada
             method: 'GET',
             url: 'https://apialurapic.herokuapp.com/flavio/photos'
@@ -8,6 +11,7 @@ describe('Buscar fotos e dados', () => {
             expect(res.body).is.not.empty //valida que o body retornado na request não está vazio
             expect(res.body[0]).to.have.property('description')//é esperado que o body contenha a property description na 1ª posição
             expect(res.body[0].description).to.be.equal('Farol iluminado')//é esperado que o body retornado na request contenha a propriedade description com valor igual a 'Farol iluminado'
+            //expect(res.duration).to.be.lte(tempoEsperado) é esperado um tempo menor lte que a constante tempoEsperado
         })    
     })
 
